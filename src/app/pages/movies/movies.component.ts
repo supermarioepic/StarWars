@@ -16,6 +16,7 @@ movies: IMovie[] = [];
 filteredMovies: IMovie[];
 directors: any = [];
 allMovies: string = "All movies";
+searchName: string = ""
   
   constructor(public dialog: MatDialog, private alert: MatSnackBar, private apiService: ApiService) { }
 
