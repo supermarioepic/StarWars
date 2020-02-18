@@ -1,0 +1,52 @@
+.movie {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    &__card {
+        width: 30%;
+        margin-bottom: 30px;
+    }
+    
+    &__img {
+        height: 250px;
+        background: url("../assets/images/bg.webp") no-repeat;
+        background-size: 350%;
+        text-align: center;
+        margin: 0 -16px;
+
+        img {
+            @include size(auto, 100%);
+        }
+    }
+
+    .mat-card-content {
+        margin: 16px 0 0;
+    }
+
+    .mat-card-actions {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.4);
+    padding-top: 15px;
+
+    .mat-select-arrow,
+    .mat-form-field-label,
+    .mat-select-value-text {
+        color: #ffffff;
+    }
+
+    .mat-form-field-underline {
+        background-color: #ffffff;
+    }
+}
+
+
+
